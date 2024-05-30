@@ -43,5 +43,5 @@ jobs:
         key: ${{ secrets.KEY }}
         script: |
           docker pull ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_REPOSITORY }}
-          docker rm -f ${{ secrets.DOCKER_REPOSITORY }}
+          docker rm -f ci-server-comment
           docker run --name ci-server-comment -p 8081:8081 --network ${{ secrets.DOCKER_NETWORK }} -d ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_REPOSITORY }}
