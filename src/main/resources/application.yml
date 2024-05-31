@@ -4,7 +4,7 @@ spring:
   application:
     name: test_back_comment
   datasource:
-    url: jdbc:mysql://mysql:3306/test_comment?characterEncoding=UTF-8&serverTimezone=Asia/Seoul
+    url: jdbc:mysql://34.172.209.173:3306/test_comment?characterEncoding=UTF-8&serverTimezone=Asia/Seoul
     username: root
     password: 1234
   jpa:
