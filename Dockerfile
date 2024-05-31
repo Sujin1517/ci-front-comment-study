@@ -5,4 +5,4 @@ ENV dbUsername=root
 ENV dbPassword=1234
 ENV serverPort=3306
 CMD ["java", "-jar", "-Dspring.profiles.active=${profiles}", "app.jar"]
-EXPOSE 8080
+EXPOSE 8081
